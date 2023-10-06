@@ -23,20 +23,16 @@ ul, a, address{
 
 .container{
     max-width: 1200px;
-    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container_header{
     display: flex;
-    justify-content: space-between;
-    
-    width: 1170px;
-}
-
-.container_portfolio{
-    max-width: 1200px;
-    margin: 0 auto;
-
+    gap: 20px;
+    width: 1200px;    
 }
 
 body {
@@ -53,18 +49,14 @@ body {
 
 .header{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
-}
-
-.header .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    background: var(--white);
     display: flex;
+    align-items: center;
 }
 
 .logotype{
-    padding-top: 32px;
-    padding-left: 200px;
+    display: flex;
+    align-items: center;
+    margin-right: 93px;
 }
 
 .logo {
@@ -73,8 +65,6 @@ body {
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
-    display: flex;
-    justify-content: flex-start;
 }
 
 .web {
@@ -87,24 +77,22 @@ body {
     font-weight: 500;
     letter-spacing: 0.28px;
     transition: 300ms;
-    padding-right: 50px;
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin: 32px auto;
 }
 
 .flex_ul_a_index{
     display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 50px;
 }
 
-.flex_ul_nav_index{
+.flex_ul_a_com_index{
     display: flex;
-    justify-content: end;
-}
-
-.flex_ul{
-    display: flex;
-    justify-content: end;
+    align-items: center;
+    margin-left: 354px;
+    gap: 40px;
 }
 
 .header_list_a:hover,
@@ -118,9 +106,6 @@ body {
     font-weight: 500;
     letter-spacing: 0.28px;
     transition: 300ms;
-    margin-right: 30px;
-    display: flex;
-    padding-top: 32px;
     white-space: nowrap;
 }
 
@@ -181,6 +166,7 @@ button:focus  {
     padding: 6px 22px;
     margin-left: 8px;
     margin-bottom: 50px;
+    
 }
 
 .button_portfolio:hover,
@@ -194,16 +180,15 @@ button:focus  {
 .flex_ul{
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-left: 30px;
-    margin-bottom: 0px;
-    padding-bottom: 92px;
+    margin: 0 auto;
+    gap: 30px;
 }
 
 .flex_ul_portfolio_button{
     display: flex;
-    margin-left: 215px;
-    padding-top: 94px;
+    justify-content: center;
+    margin-top: 94px;
+    gap: 8px;
 }
 
 .portfolio_box{
@@ -244,6 +229,8 @@ button:focus  {
 
 .flex_ul_info{
     display: flex;
+    margin: 94px auto;
+
 }
 
 .info_tite{
@@ -252,7 +239,6 @@ button:focus  {
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    padding-left: 30px;
 }
 
 .info_description{
@@ -261,7 +247,6 @@ button:focus  {
     font-weight: 400;
     line-height: 171.429%;
     letter-spacing: 0.42px;
-    padding-left: 30px;
 }
 
 .work_title{
@@ -270,10 +255,12 @@ button:focus  {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
 }
 
 .work_list{
-    margin: 0 15px;
+    
+    
 }
 
 .team{
@@ -289,6 +276,7 @@ button:focus  {
     font-weight: 700;
     letter-spacing: 1.08px;
     padding-top: 94px;
+    margin-top: 94px;
 }
 
 .team_pictures{
@@ -301,7 +289,7 @@ button:focus  {
     border-radius: 0px 0px 4px 4px;
     background: var(--white);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-	margin: 0px 0px 100px 0px;
+	margin: 0px 0px 94px 0px;
 
 }
 
