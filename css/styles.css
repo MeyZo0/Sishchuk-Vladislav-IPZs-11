@@ -10,15 +10,20 @@
     --style_main: 'Roboto'
 }
 
+/* *{
+        outline: 1px solid red;
+} */
+
 a:link{
     text-decoration: none;
 }
 
-ul, a, address{
+ul, a, h1, h2, h3, h4, p, address{
     list-style: none;
     text-decoration: none;
     font-style: normal;
     padding: 0px;
+    margin: 0px;
 }
 
 .container{
@@ -31,7 +36,6 @@ ul, a, address{
 
 .container_header{
     display: flex;
-    gap: 20px;
     width: 1200px;    
 }
 
@@ -48,8 +52,7 @@ body {
 /* header */
 
 .header{
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
-    display: flex;
+    outline: 1px solid #ECECEC;
     align-items: center;
 }
 
@@ -91,7 +94,7 @@ body {
 .flex_ul_a_com_index{
     display: flex;
     align-items: center;
-    margin-left: 354px;
+    margin-left: auto;
     gap: 40px;
 }
 
@@ -140,9 +143,8 @@ button:focus  {
     line-height: 187.5%;
     letter-spacing: 0.96px;
     cursor: pointer;
-    width: 200px;
-    height: 50px;
-    margin-bottom: 210px;
+    padding: 10px 24px;
+    margin-top: 30px;
 }
 
 .button_main:hover,
@@ -151,7 +153,6 @@ button:focus  {
 }
 
 .button_portfolio{
-    flex-shrink: 0;
     border-radius: 4px;
     background: var(--white_gray);    
     color: var(--black_lighter);
@@ -161,10 +162,10 @@ button:focus  {
     line-height:  162.5%;
     letter-spacing: 0.48px;
     transition: 200ms;
-    font-style: var(--style_main);
+    font-style: normal;
+    font-family: var(--style_main);
     cursor: pointer;
     padding: 6px 22px;
-    margin-left: 8px;
     margin-bottom: 50px;
     
 }
@@ -184,30 +185,12 @@ button:focus  {
     gap: 30px;
 }
 
-.flex_ul_portfolio_button{
-    display: flex;
-    justify-content: center;
-    margin-top: 94px;
-    gap: 8px;
-}
-
-.portfolio_box{
-    margin-bottom: 74px;
-}
-
-.flex_ul_portfolio{
-    list-style: none;
-    padding: 0;
-    margin: 0; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .effect{
     background: var(--black_gray);
     text-align: center;
     align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .effect_title{
@@ -218,8 +201,6 @@ button:focus  {
     line-height: 136.364%;
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    padding-top: 200px;
-    padding-bottom: 30px;
     margin: 0 auto;
     }
 
@@ -229,8 +210,9 @@ button:focus  {
 
 .flex_ul_info{
     display: flex;
-    margin: 94px auto;
-
+    padding-top: 94px;
+    padding-bottom: 94px;
+    gap: 30px;
 }
 
 .info_tite{
@@ -239,6 +221,7 @@ button:focus  {
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .info_description{
@@ -247,6 +230,11 @@ button:focus  {
     font-weight: 400;
     line-height: 171.429%;
     letter-spacing: 0.42px;
+}
+
+.work{
+    padding-bottom: 94px;
+    
 }
 
 .work_title{
@@ -259,14 +247,13 @@ button:focus  {
 }
 
 .work_list{
-    
-    
+    display: flex;
 }
 
 .team{
     background: #F5F4FA;
-    margin-top: 0px;
-    padding-top: 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .our_team{
@@ -275,22 +262,21 @@ button:focus  {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
-    padding-top: 94px;
-    margin-top: 94px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
 }
 
 .team_pictures{
     width: 270px;
     height: 260px;
+    margin-bottom: 30px;
 }
 
 .team_people{
-    flex-shrink: 0;
     border-radius: 0px 0px 4px 4px;
     background: var(--white);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-	margin: 0px 0px 94px 0px;
-
 }
 
 .team_title{
@@ -299,6 +285,7 @@ button:focus  {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
+    margin-bottom: 10px;
 }
 
 .team_description{
@@ -307,21 +294,41 @@ button:focus  {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
+    margin-bottom: 30px;
+}
+
+/* portfolio */
+
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.flex_ul_portfolio_button{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.flex_ul_portfolio{
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .pictures_portfolio{
     width: 370px;
     height: 404px;
-    flex-shrink: 0;
-    border: 1px solid #EEE;
+    outline: 1px solid #EEE;
     background: var(--white);
-    margin-bottom: 30px;
 }
 
 .pictures_portfolio_images{
     width: 370px;
     height: 294px;
-    flex-shrink: 0;
 }   
 
 .portfolio_title{
@@ -330,7 +337,6 @@ button:focus  {
     font-weight: 700;
     line-height: 200%;
     letter-spacing: 1.08px;
-    padding-left: 24px
 }
 
 .portfolio_description{
@@ -339,15 +345,18 @@ button:focus  {
     font-weight: 400;
     line-height: 187.5%;
     letter-spacing: 0.48px;
-    padding-left: 24px
+}
+
+.div_pictures_portfolio{
+    padding: 20px 20px;
+    margin: 0px;
 }
 
 /* footer */
 
 .footer .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 215px;
+    padding-top: 60px;
+    padding-bottom: 60px ;
 }
 
 .footer {
@@ -357,7 +366,8 @@ button:focus  {
 }
 
 .footer_ {
-    padding-left: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .footer_title{
@@ -386,7 +396,7 @@ button:focus  {
     margin-top: 28px;
 }
 
-.footer_li{
+.footer_li:not(:last-child) {
     margin-bottom: 12px;
 }
 
@@ -398,7 +408,7 @@ button:focus  {
     font-weight: 400;
     line-height: 114.286%;
     letter-spacing: 0.42px;
-    
+    margin: 0 0 12px 0;
 }
 
 .mail_footer{
@@ -412,7 +422,6 @@ button:focus  {
     font-weight: 400;
     line-height: 114.286%;
     letter-spacing: 0.42px;
-    margin-bottom: 12px;
 }
 
 .phone_footer{
@@ -426,6 +435,5 @@ button:focus  {
     font-weight: 400;
     line-height: 114.286%;
     letter-spacing: 0.42px;
-    margin-bottom: 12px;
 }
 
