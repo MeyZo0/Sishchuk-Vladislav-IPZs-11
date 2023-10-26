@@ -7,16 +7,48 @@
     --white: #FFFFFF;
     --white_gray: #F5F4FA;
     --gray: #757575;
+    --icon_color: #afb1b8;
     --style_main: 'Roboto'
+}
+
+/* *{
+        outline: 1px solid red;
+} */
+
+*,
+::before,
+::after {
+box-sizing: border-box;
 }
 
 a:link{
     text-decoration: none;
 }
 
-ul {
+ul, a, h1, h2, h3, h4, p, address{
     list-style: none;
-} 
+    text-decoration: none;
+    font-style: normal;
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container_header{
+    display: flex;
+    width: 1200px;    
+}
 
 body {
     font-family: var(--style_main), sans-serif;
@@ -25,6 +57,20 @@ body {
     font-size: 14px;
     font-weight: 400;
     background-color: var(--white);
+    margin: 0 auto;
+}
+
+/* header */
+
+.header{
+    outline: 1px solid #ECECEC;
+    align-items: center;
+}
+
+.logotype{
+    display: flex;
+    align-items: center;
+    margin-right: 93px;
 }
 
 .logo {
@@ -39,17 +85,28 @@ body {
     color: var(--brand-color);
 }
 
-.header{
-    flex-shrink: 0;
-    background: var(--white);
-}
-
 .header_list_a{
     color: var(--black);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    transition: 400ms;
+    transition: 300ms;
+    display: flex;
+    margin: 32px auto;
+}
+
+.flex_ul_a_index{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.flex_ul_a_com_index{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 40px;
 }
 
 .header_list_a:hover,
@@ -58,11 +115,14 @@ body {
 }
 
 .header_list_a_communication{
+    display: inline-flex;
+    align-items: center;
     color: var(--gray);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
     transition: 300ms;
+    white-space: nowrap;
 }
 
 .header_list_a_communication:hover,
@@ -74,23 +134,19 @@ body {
     color: var(--brand-color);
 }
 
-/* закінчення header, початок main */
-
-.effect{
-    width: 100%;
-    flex-shrink: 0;
-    background: var(--black_gray);
+.icon_header{
+    margin-right: 10px;
 }
 
-.effect_title{
-    color: var(--white);
-    text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 136.364%;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-    }
+/* main */
+
+/* buttons */
+
+button,
+button:active,
+button:focus  {
+  border:none;
+}
 
 .button_main{
     flex-shrink: 0;
@@ -103,6 +159,9 @@ body {
     font-weight: 700;
     line-height: 187.5%;
     letter-spacing: 0.96px;
+    cursor: pointer;
+    padding: 10px 24px;
+    margin-top: 30px;
 }
 
 .button_main:hover,
@@ -111,24 +170,74 @@ body {
 }
 
 .button_portfolio{
-    flex-shrink: 0;
     border-radius: 4px;
-    background: var(--white_gray);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    background: var(--white_gray);    
     color: var(--black_lighter);
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height:  162.5%;
     letter-spacing: 0.48px;
-    transition: 300ms;
-    font-style: var(--style_main);
+    transition: 200ms;
+    font-style: normal;
+    font-family: var(--style_main);
+    cursor: pointer;
+    padding: 6px 22px;
 }
 
 .button_portfolio:hover,
 .button_portfolio:focus{
     color: var(--white);
     background-color: var(--brand-color_hover);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+/* end buttons*/
+
+.flex_ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.effect{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/Img_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--black_gray);
+}
+
+.effect_title{
+    color: var(--white);
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 136.364%;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    }
+
+.info{
+    text-align: left;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.div_info{
+    padding: 25px 100px;
+    background-color: var(--white_gray);
+    margin-bottom: 30px;
+}
+
+.flex_ul_info{
+    display: flex;
+    gap: 30px;
 }
 
 .info_tite{
@@ -137,6 +246,7 @@ body {
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .info_description{
@@ -147,17 +257,28 @@ body {
     letter-spacing: 0.42px;
 }
 
+.work{
+    padding-bottom: 94px;
+    
+}
+
 .work_title{
     color: var(--black_lighter);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
 }
 
 .team{
     background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
+.div_team{
+    padding: 30px;
 }
 
 .our_team{
@@ -166,16 +287,17 @@ body {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
 }
 
 .team_pictures{
     width: 270px;
     height: 260px;
-    flex-shrink: 0;
 }
 
 .team_people{
-    flex-shrink: 0;
     border-radius: 0px 0px 4px 4px;
     background: var(--white);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -187,6 +309,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
+    margin-bottom: 10px;
 }
 
 .team_description{
@@ -195,20 +318,127 @@ body {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
+    margin-bottom: 16px;
+}
+
+.a_adress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    gap: 10px;
+    border-radius: 50%;
+    color: var(--icon_color);
+    transition: 300ms;
+}
+
+.a_adress:hover,
+.a_adress:focus{
+    transition: 300ms;
+    background-color: var(--brand-color);
+    color: var(--white);
+    outline: none;
+}
+
+.ul_icon_team {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.ul_customers{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.icon_customers{
+    color: #AFB1B8;
+    padding: 16px 32px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.customers{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.adress{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    transition: color 0.5s, border 0.5s;
+}
+
+.icon_customers:hover,
+.icon_customers:focus{
+    transition: 300ms;
+    color: var(--brand-color_hover);
+}
+
+.adress:hover,
+.adress:focus{
+    transition: 300ms;
+    border-color: var(--brand-color_hover);
+    border-radius: 4px;
+}
+
+.customers_title {
+    color: var(--black_lighter);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+/* portfolio */
+
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.pictures_portfolio:hover,
+.pictures_portfolio:focus{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.flex_ul_portfolio_button{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.flex_ul_portfolio{
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .pictures_portfolio{
     width: 370px;
     height: 404px;
-    flex-shrink: 0;
-    border: 1px solid #EEE;
+    outline: 1px solid #EEE;
     background: var(--white);
 }
 
 .pictures_portfolio_images{
     width: 370px;
     height: 294px;
-    flex-shrink: 0;
 }   
 
 .portfolio_title{
@@ -227,12 +457,75 @@ body {
     letter-spacing: 0.48px;
 }
 
-/* закінчення main, початок footer */
+.div_pictures_portfolio{
+    padding: 20px 24px;
+    margin: 0px;
+}
+
+/* footer */
+
+.footer .container{
+    padding-top: 60px;
+    padding-bottom: 60px ;
+    display: flex;
+}
 
 .footer {
     width: 100%;
-    flex-shrink: 0;
     background-color: var(--black_gray);
+    
+}
+
+.connection{
+    margin-left: 70px;
+}
+
+.footer_p_right{
+    color: #FFF;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer_svg{
+    display: flex;
+    gap: 10px;
+}
+
+.a_adress_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.10);;
+    transition: 300ms;
+}
+
+.a_adress_footer:hover,
+.a_adress_footer:focus{
+    transition: 300ms;
+    background-color: var(--brand-color);
+    color: var(--white);
+    outline: none;
+}
+
+.footer_ {
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer_title{
+    padding-left: 215px;
+    padding-top: 60px;
+}
+
+.footer_no_logo{
+    margin: 0px;
+    padding-left: 215px;
 }
 
 .logo_footer{
@@ -247,14 +540,21 @@ body {
     color: var(--brand-color);
 }
 
-.city_footer{
+.footer_adress{
+    margin-top: 28px;
+}
+
+.footer_li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.city_footer_li{
     color: var(--white);
-    font-family: 'Roboto';
-    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 114.286%;
     letter-spacing: 0.42px;
+    margin: 0 0 12px 0;
 }
 
 .mail_footer{
@@ -262,8 +562,6 @@ body {
     height: 16px;
     flex-shrink: 0;
     color: rgba(255, 255, 255, 0.60);
-    font-family: 'Roboto';
-    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 114.286%;
@@ -275,10 +573,10 @@ body {
     height: 16px;
     flex-shrink: 0;
     color: rgba(255, 255, 255, 0.60);  
-    font-family: 'Roboto';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 114.286%;
     letter-spacing: 0.42px;
 }
+    
