@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="images/logo.jfif">
+    <link rel="shortcut icon" href="images/icons.svg">
     <link rel="stylesmodern" href="css/modern-normalize.css">
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +14,7 @@
       rel="stylesheet"/>
 </head>
     
-<body>
+<body class="body">
     <header class="header">
         <div class="container">
             <div class="container_header">
@@ -24,7 +24,7 @@
                     <nav class="header_list_nav">
                         <ul class="flex_ul_a_index">
                             <li>
-                                <a class="header_list_a active" href="index.html">Студія</a>
+                                <a class="header_list_a_active" href="index.html">Студія</a>
                             </li>
                             <li>
                                 <a class="header_list_a" href="portfolio.html">Портфоліо</a>
@@ -51,8 +51,8 @@
     <main>
         <section class="effect">
             <div class="container">
-                <h1 class="effect_title">Ефективні рішення для <br> вашого бізнесу</h1>
-                <button class="button_main" type="button">Замовити послугу</button>
+                <h1 class="effect_title">Ефективні рішення для вашого бізнесу</h1>
+                <button class="button_main" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
 
@@ -85,7 +85,7 @@
                     </li>
                     <li>
                         <div class="div_info">
-                            <svg class="icon_info" width="70" height="70"><use href="./images/icons.svg#antenna"></use>
+                            <svg class="icon_info" width="70" height="70"><use href="./images/icons.svg#astonaut"></use>
                             </svg>
                         </div>
                         <h3 class="info_tite">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
@@ -100,13 +100,16 @@
                 <h2 class="work_title">Чим ми займаємося</h2>
                     <ul class="flex_ul">
                         <li class="work_list">
-                            <img class="work_pictures" width="370" src="images/texi.jpg" alt="Фото людини яка працює за чимось"/>
+                            <img class="work_pictures" width="370" src="images/texi.jpg" alt="Десктопні додатки"/>
+                            <p class="text_work_list">Десктопні додатки</p>
                         </li>
                         <li class="work_list">
-                            <img class="work_pictures" width="370" src="images/texo.jpg" alt="Фото людини яка працює за ноутбуком паралельно держить телефон"/>
+                            <img class="work_pictures" width="370" src="images/texo.jpg" alt="Мобільні додатки"/>
+                            <p class="text_work_list">Мобільні додатки</p>
                         </li>
                         <li class="work_list">
-                            <img class="work_pictures" width="370" src="images/texp.jpg" alt="Фото людини яка працює на планшеті з графікою"/>
+                            <img class="work_pictures" width="370" src="images/texp.jpg" alt="Дизайнерські рішення"/>
+                            <p class="text_work_list">Дизайнерські рішення</p>
                         </li>
                     </ul>
             </div>
@@ -123,19 +126,19 @@
                                     <p class="team_description">Product Designer</p>
                                     <ul class="ul_icon_team">
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#instagram"></use>
+                                            <a class="a_adress" href="https://instagram.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#instagram"></use>
                                             </svg></a> 
                                         </li>
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#twitter"></use>
+                                            <a class="a_adress" href="https://twitter.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#twitter"></use>
                                             </svg></a>
                                         </li>
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#facebook"></use>
+                                            <a class="a_adress" href="https://www.facebook.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#facebook"></use>
                                             </svg></a>
                                         </li>
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#linkedin"></use>
+                                            <a class="a_adress" href="https://www.linkedin.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#linkedin"></use>
                                             </svg></a>
                                         </li>
                                     </ul>
@@ -148,19 +151,19 @@
                                     <p class="team_description"> Frontend Developer</p>
                                     <ul class="ul_icon_team">
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#instagram"></use>
+                                            <a class="a_adress" href="https://instagram.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#instagram"></use>
                                             </svg></a> 
                                         </li>
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#twitter"></use>
+                                            <a class="a_adress" href="https://twitter.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#twitter"></use>
                                             </svg></a>
                                         </li>
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#facebook"></use>
+                                            <a class="a_adress" href="https://www.facebook.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#facebook"></use>
                                             </svg></a>
                                         </li>
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#linkedin"></use>
+                                            <a class="a_adress" href="https://www.linkedin.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#linkedin"></use>
                                             </svg></a>
                                         </li>
                                     </ul>
@@ -173,19 +176,19 @@
                                     <p class="team_description">Marketing</p>
                                     <ul class="ul_icon_team">
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#instagram"></use>
+                                            <a class="a_adress" href="https://instagram.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#instagram"></use>
                                             </svg></a> 
                                         </li>
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#twitter"></use>
+                                            <a class="a_adress" href="https://twitter.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#twitter"></use>
                                             </svg></a>
                                         </li>
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#facebook"></use>
+                                            <a class="a_adress" href="https://www.facebook.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#facebook"></use>
                                             </svg></a>
                                         </li>
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#linkedin"></use>
+                                            <a class="a_adress" href="https://www.linkedin.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#linkedin"></use>
                                             </svg></a>
                                         </li>
                                     </ul>
@@ -198,19 +201,19 @@
                                     <p class="team_description">UI Designer</p>
                                     <ul class="ul_icon_team">
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#instagram"></use>
+                                            <a class="a_adress" href="https://instagram.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#instagram"></use>
                                             </svg></a> 
                                         </li>
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#twitter"></use>
+                                            <a class="a_adress" href="https://twitter.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#twitter"></use>
                                             </svg></a>
                                         </li>
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#facebook"></use>
+                                            <a class="a_adress" href="https://www.facebook.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#facebook"></use>
                                             </svg></a>
                                         </li>
                                         <li class="li_icon_team">
-                                            <a class="a_adress" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#linkedin"></use>
+                                            <a class="a_adress" href="https://www.linkedin.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#linkedin"></use>
                                             </svg></a>
                                         </li>
                                     </ul>
@@ -287,24 +290,37 @@
                     <p class="footer_p_right">Приєднуйтесь</p>
                     <ul class="footer_svg">
                         <li class="li_footer_svg">
-                            <a class="a_adress_footer" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#instagram"></use>
+                            <a class="a_adress_footer" href="https://instagram.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#instagram"></use>
                             </svg></a>
                         </li>
                         <li class="li_footer_svg">
-                            <a class="a_adress_footer" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#twitter"></use>
+                            <a class="a_adress_footer" href="https://twitter.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#twitter"></use>
                             </svg></a>
                         </li>
                         <li class="li_footer_svg">
-                            <a class="a_adress_footer" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#facebook"></use>
+                            <a class="a_adress_footer" href="https://www.facebook.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#facebook"></use>
                             </svg></a>
                         </li>
                         <li class="li_footer_svg">
-                            <a class="a_adress_footer" href="#"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#linkedin"></use>
+                            <a class="a_adress_footer" href="https://www.linkedin.com"><svg class="icon_team" width="20" height="20"><use href="./images/icons.svg#linkedin"></use>
                             </svg></a>
                         </li>
                     </ul>
                 </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal_window">
+            <button type="button" class="close_modal" data-modal-close>
+                <svg class="icon_modal_window">
+                    <use href="/images/icons.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="/modal.js"></script>
+
 </body>
 </html>
