@@ -105,8 +105,7 @@ body {
     transition: 300ms;
     display: flex;
     margin: 0px auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 0px;
     position: relative;
 }
 
@@ -688,6 +687,8 @@ button:focus  {
 .button_footer_div{
     display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     padding: 10px 23px;
     gap: 10px
 }
@@ -704,6 +705,12 @@ button:focus  {
     width: 358px;
     height: 50px;
     border-radius: 4px;
+    padding-left: 16px;
+    color: var(--white);
+}
+
+.footer_input:focus{
+    outline: 1px solid var(--black_gray);
 }
 
 /* модальне вікно*/
@@ -807,12 +814,26 @@ button:focus  {
     border: 1px solid rgba(33, 33, 33, 0.20);
 }
 
-.input_modal_window:focus{
+.input_modal_window:focus,
+.input_modal_window:hover{
     transition: 300ms;
     outline: 1px solid var(--brand-color);
 }
 
+.input_modal_window:focus+.icon_modal_window,
+.input_modal_window:hover+.icon_modal_window{
+    transition: 300ms;
+    color: var(--brand-color_hover);
+}
+
 .input_modal_window_comment{
+    resize: none;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
     width: 100%;
     min-height: 120px;
     padding: 11px 12px;
@@ -820,7 +841,8 @@ button:focus  {
     border: 1px solid rgba(33, 33, 33, 0.20);
 }
 
-.input_modal_window_comment:focus{
+.input_modal_window_comment:focus,
+.input_modal_window_comment:hover{
     transition: 300ms;
     outline: 1px solid var(--brand-color);
 }
@@ -840,26 +862,28 @@ button:focus  {
     color: var(--black);
 }
 
-.icon_modal_window:focus{
-    transition: 300ms;
-    color: var(--brand-color_hover);
-}
-
 .modal_window_a{
-    transition: 300ms;
+    line-height: 171.43%;
+    letter-spacing: 0.42px;
+    text-decoration: underline !important;
     color: var(--brand-color);
-    text-decoration: underline;
 }
 
 .modal_window_bottom_button{
     text-align: center;
 }
 
+.modal_window_bottom_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
 .button_modal_window_send{
     margin-top: 30px;
 }
 
-.modal_window_span{
+.agree_lable{
     margin-left: 8px;
 }
 
