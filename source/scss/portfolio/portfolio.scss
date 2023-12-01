@@ -1,0 +1,83 @@
+.portfolio {
+	padding-top: 94px;
+	padding-bottom: 94px;
+	&__li {
+		&:hover {
+			box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+			.portfolio__hiden {
+				transform: translateY(0);
+			}
+		}
+		&:focus {
+			box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+			.portfolio__hiden {
+				transform: translateY(0);
+			}
+		}
+		width: 370px;
+		height: 404px;
+		outline: 1px solid #EEE;
+		background: var(--white);
+	}
+	&__ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+	&__images {
+		width: 370px;
+		height: 294px;
+	}
+	&__card {
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+	}
+	&__hiden {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 64px 24px;
+		transform: translateY(101%);
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 300ms;
+		opacity: 0.9;
+		transition-property: transform;
+		background-color: $background-color_2;
+	}
+	&__text {
+		font-size: 18px;
+		line-height: 155.56%;
+		letter-spacing: 0.54px;
+		color: $color_4;
+		background-color: $background-color_5;
+		opacity: 0.9;
+	}
+	&__title {
+		color: $color_5;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 200%;
+		letter-spacing: 1.08px;
+	}
+	&__description {
+		color: $color_3;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 187.5%;
+		letter-spacing: 0.48px;
+	}
+	&__bottom {
+		padding: 20px 24px;
+		margin: 0px;
+	}
+}
+.nav {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: 50px;
+}

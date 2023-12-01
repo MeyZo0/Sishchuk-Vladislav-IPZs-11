@@ -1,0 +1,88 @@
+.header {
+	outline: 1px solid #ECECEC;
+	align-items: center;
+	&__logotype {
+		display: flex;
+		align-items: center;
+		margin-right: 93px;
+	}
+	&__logo {
+		color: $color_1;
+		font-family: $font-family_2;
+		font-size: 26px;
+		font-weight: 700;
+		letter-spacing: 0.78px;
+	}
+	&__web {
+		color: $color_2;
+	}
+	&__link {
+		color: $color_1;
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: 0.28px;
+		transition: 300ms;
+		display: flex;
+		margin: 0px auto;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		&:hover {
+			color: $color_2;
+		}
+		&:focus {
+			color: $color_2;
+		}
+	}
+	&__link_active {
+		color: $color_2;
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: 0.28px;
+		transition: 300ms;
+		display: flex;
+		margin: 0px auto;
+		padding: 32px 0px;
+		position: relative;
+		&:after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 4px;
+			background-color: $background-color_2;
+			position: absolute;
+			bottom: -2px;
+			border-radius: 2px;
+		}
+	}
+	&__ul {
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		gap: 50px;
+	}
+	&__ul__com {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		gap: 40px;
+	}
+	&__info {
+		display: inline-flex;
+		align-items: center;
+		color: $color_3;
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: 0.28px;
+		transition: 300ms;
+		white-space: nowrap;
+		&:hover {
+			color: $color_2;
+		}
+		&:focus {
+			color: $color_2;
+		}
+	}
+	&__icon {
+		margin-right: 10px;
+	}
+}
