@@ -307,12 +307,63 @@
                         </li>
                     </ul>
                 </div>
+                <form class="footer_bottom_right_right">
+                    <label class="footer_label_right" id="subscribe">Підпишіться на розсилку</label>
+                    <div class="footer_right_right">
+                        <input class="footer_input" name="subscribe" type="email" placeholder="E-mail" required placeholder="">
+                        <button class="button_footer" type="submit">
+                                Підписатися
+                                <svg class="footer_button_svg" width="25" height="24">
+                                    <use href="./images/icons.svg#telegram">
+                                </svg>
+                        </button>
+                    </div>
+                </form>
         </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal_window">
             <button type="button" class="close_modal" data-modal-close>
+                <svg class="icon_modal_window_close">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+            <form class="modal_form">
+                <h3 class="modal_window_title">Залиште свої дані, ми вам передзвонимо</h3>
+                    <ul class="modal_window_ul">
+                        <li class="modal_window_li">
+                            <label class="modal_window_lable" id="name">Ім'я</label>
+                            <input class="input_modal_window" for="name" type="text" name="login" required placeholder=""> <svg class="icon_modal_window"><use href="./images/icons.svg#icon_name"></use>
+                            </svg>
+                        </li>
+                        <li class="modal_window_li">
+                            <label class="modal_window_lable" id="phone">Телефон</label>
+                            <input class="input_modal_window" for="phone" type="text" name="phone" required placeholder=""> <svg class="icon_modal_window"><use href="./images/icons.svg#icon_number"></use>
+                            </svg>
+                        </li>
+                        <li class="modal_window_li">
+                            <label class="modal_window_lable" id="email">Пошта</label>
+                            <input class="input_modal_window" for="email" type="email" name="email" required placeholder=""> <svg class="icon_modal_window"><use href="./images/icons.svg#icon_mail"></use>
+                            </svg>
+                        </li>
+                        <li class="modal_window_li">
+                            <label class="modal_window_lable" id="comment">Коментар</label>
+                            <textarea class="input_modal_window_comment" for="comment" cols="30" rows="10" type="text" placeholder="Введіть текст"></textarea>
+                        </li>
+                    </ul>
+                <div class="modal_window_bottom">
+                    <div class="modal_window_bottom_text">
+                        <input class="input_modal_window_bottom" type="checkbox" type="checkbox" name="agree" value="agree" id="agree" required>
+                        <label for="agree" class="agree_lable" for="agree">
+                            <span class="modal_window_span">Погоджуюся з розсилкою та приймаю <a class="modal_window_a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Умови договору</a></span>
+                        </label>
+                    </div>
+                    <div class="modal_window_bottom_button">
+                        <button type="submit" class="button_modal_window_send">Відправити</button>
+                    </div>
+                </div>                    
+            </form>
                 <svg class="icon_modal_window">
                     <use href="./images/icons.svg#close"></use>
                 </svg>
