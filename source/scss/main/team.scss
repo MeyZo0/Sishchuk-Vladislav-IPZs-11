@@ -15,8 +15,7 @@
 		margin-bottom: 50px;
 	}
 	&__pictures {
-		width: 270px;
-		height: 260px;
+		@include foto_card (270px)
 	}
 	&__people {
 		border-radius: 0px 0px 4px 4px;

@@ -1,7 +1,9 @@
 ﻿
+@import "./modern-normalize.css";
 @import "./wasr.scss";
+@import "./mixin.scss";
+@import "./portfolio/portfolio.scss";
 @import "./header.scss";
-@import "./footer.scss";
 @import "./container.scss";
 @import "./button.scss";
 @import "./main/hero.scss";
@@ -9,9 +11,8 @@
 @import "./main/work.scss";
 @import "./main/team.scss";
 @import "./main/customers.scss";
-@import "./portfolio/portfolio.scss";
 @import "./modal.scss";
-@import "./modern-normalize.css";
+@import "./footer.scss";
 
 * {
 	box-sizing: border-box;
@@ -44,11 +45,17 @@ body {
 	background-color: $background-color_1;
 	margin: 0 auto;
 }
-.flex__ul {
+.flex {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
 	gap: 30px;
+}
+.filter {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: 50px;
 }
 
 .input__comment {

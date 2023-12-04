@@ -16,7 +16,6 @@
     
 <body class="body">
     <header class="header">
-        <div class="container">
             <div class="container__header">
                 <div class="header__logotype">
                     <a class="header__logo" href="index.html"> <span class="header__web"> Web</span><span class="header__studio">Studio</span></a>
@@ -34,7 +33,7 @@
                             </li>
                         </ul>
                     </nav>
-                        <ul class="header__ul__com">
+                        <ul class="header__communication">
                             <li>
                                 <a class="header__info" href="mailto:info@devstudio.com"><svg class="header__icon" width="16" height="12"><use href="./images/icons.svg#mail"></use>
                                 </svg>info@devstudio.com</a>
@@ -45,7 +44,6 @@
                             </li>
                         </ul>
             </div>
-        </div>
     </header>
 
     <main>
@@ -98,7 +96,7 @@
         <section class="work">
             <div class="container">
                 <h2 class="work__title">Чим ми займаємося</h2>
-                    <ul class="flex__ul">
+                    <ul class="work__ul flex">
                         <li class="work__li">
                             <img class="work__pictures" width="370" src="images/texi.jpg" alt="Десктопні додатки"/>
                             <p class="work__text">Десктопні додатки</p>
@@ -118,7 +116,7 @@
         <section class="team">
             <div class="container">
                     <h2 class="team__our">Наша команда</h2>
-                    <ul class="flex__ul">
+                    <ul class="team__ul flex">
                         <li class="team__people">
                             <img class="team__pictures" width="270" src="images/igor.jpg" alt="Фото Ігор Дем'яненко"/>
                                 <div class="team__div">
@@ -129,15 +127,15 @@
                                             <a class="team__link" href="https://instagram.com"><svg class="team__icon" width="20" height="20"><use href="./images/icons.svg#instagram"></use>
                                             </svg></a> 
                                         </li>
-                                        <li class="team__icon">
+                                        <li class="team__li">
                                             <a class="team__link" href="https://twitter.com"><svg class="team__icon" width="20" height="20"><use href="./images/icons.svg#twitter"></use>
                                             </svg></a>
                                         </li>
-                                        <li class="team__li__icon">
+                                        <li class="team__li">
                                             <a class="team__link" href="https://www.facebook.com"><svg class="team__icon" width="20" height="20"><use href="./images/icons.svg#facebook"></use>
                                             </svg></a>
                                         </li>
-                                        <li class="team__li__icon">
+                                        <li class="team__li">
                                             <a class="team__link" href="https://www.linkedin.com"><svg class="team__icon" width="20" height="20"><use href="./images/icons.svg#linkedin"></use>
                                             </svg></a>
                                         </li>
@@ -330,8 +328,8 @@
                     <use href="./images/icons.svg#close"></use>
                 </svg>
             </button>
-            <form class="modal__form">
-                <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
+            <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
+                <form class="modal__form">
                     <ul class="modal__ul">
                         <li class="modal__li">
                             <label class="modal__lable" for="name" id="name">Ім'я</label>
@@ -353,7 +351,7 @@
                             <textarea class="input__comment" for="comment" cols="30" rows="10" type="text" placeholder="Введіть текст"></textarea>
                         </li>
                     </ul>
-                <div class="modal__bottom">
+                    <div class="modal__bottom">
                     <div class="modal__text">
                         <input class="modal__checkbox" type="checkbox" name="agree" value="agree" id="agree" required>
                         <label for="agree" class="modal__agree" for="agree">
@@ -363,8 +361,8 @@
                     <div class="modal__button">
                         <button type="submit" class="modal__send">Відправити</button>
                     </div>
-                </div>                    
-            </form>
+                    </div>                    
+                </form>
         </div>
     </div>
 
