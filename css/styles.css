@@ -442,36 +442,15 @@ button:focus {
   margin-bottom: 16px;
 }
 .team__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 44px;
-  height: 44px;
-  gap: 10px;
-  border-radius: 50%;
   color: #afb1b8;
-  -webkit-transition: 300ms;
-  transition: 300ms;
 }
 .team__link:hover {
-  -webkit-transition: 300ms;
-  transition: 300ms;
   background-color: #2196F3;
   color: white;
-  outline: none;
 }
 .team__link:focus {
-  -webkit-transition: 300ms;
-  transition: 300ms;
   background-color: #2196F3;
   color: white;
-  outline: none;
 }
 .team__ul {
   display: -webkit-box;
@@ -791,36 +770,16 @@ button:focus {
   gap: 10px;
 }
 .footer__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transition: 300ms;
-  transition: 300ms;
 }
 .footer__link:hover {
-  -webkit-transition: 300ms;
-  transition: 300ms;
   background-color: #2196F3;
   color: white;
-  outline: none;
 }
 .footer__link:focus {
-  -webkit-transition: 300ms;
-  transition: 300ms;
   background-color: #2196F3;
   color: white;
-  outline: none;
 }
 .footer__ul {
   padding: 0px;
@@ -995,6 +954,34 @@ body {
           justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  gap: 10px;
+  border-radius: 50%;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.social:hover {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  outline: none;
+}
+.social:focus {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  outline: none;
 }
 
 .input__comment {

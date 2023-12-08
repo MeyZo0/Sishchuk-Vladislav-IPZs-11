@@ -39,26 +39,14 @@
 		margin-bottom: 16px;
 	}
 	&__link {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 44px;
-		height: 44px;
-		gap: 10px;
-		border-radius: 50%;
 		color: $color_6;
-		transition: 300ms;
 		&:hover {
-			transition: 300ms;
 			background-color: $background-color_5;
 			color: $color_4;
-			outline: none;
 		}
 		&:focus {
-			transition: 300ms;
 			background-color: $background-color_5;
 			color: $color_4;
-			outline: none;
 		}
 	}
 	&__ul {

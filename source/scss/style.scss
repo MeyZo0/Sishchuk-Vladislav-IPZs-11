@@ -57,6 +57,25 @@ body {
 	gap: 8px;
 	margin-bottom: 50px;
 }
+.social{
+	display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 44px;
+		height: 44px;
+		gap: 10px;
+		border-radius: 50%;
+		transition: 300ms;
+		&:hover {
+			transition: 300ms;
+			outline: none;
+		}
+		&:focus {
+			transition: 300ms;
+			outline: none;
+		}
+}
+
 
 .input__comment {
 	resize: none;
