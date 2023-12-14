@@ -1,7 +1,6 @@
 .hero {
 	background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/Img_background.jpg");
 	background-position: center;
-	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
 	align-items: center;
@@ -17,7 +16,7 @@
 		letter-spacing: 2.64px;
 		text-transform: uppercase;
 		margin: 0 auto;
-		word-wrap: break-word;
+
 		max-width: 700px;
 	}
 }

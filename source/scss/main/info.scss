@@ -5,12 +5,32 @@
 	&__ul {
 		display: flex;
 		gap: 30px;
+		@include tablet {
+			flex-wrap: wrap;
+		  }
+		  @include mobile {
+			flex-wrap: wrap;
+			justify-content: center;
+		  }
 	}
+	&__list{
+		max-width: 350px;
+		@include mobile {
+		  max-width: 100%;
+		}
+	  }
+	
 	&__div {
 		padding: 25px 100px;
 		background-color: $background-color_4;
 		margin-bottom: 30px;
 		border-radius: 4px;
+		@include tablet {
+			padding: 25px 142px;
+		  }
+		  @include mobile {
+			padding: 25px 190px;
+		  }
 	}
 	&__title {
 		color: $color_5;

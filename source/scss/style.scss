@@ -1,6 +1,7 @@
 ﻿
 @import "./modern-normalize.css";
 @import "./wasr.scss";
+@import "./lock.scss";
 @import "./mixin.scss";
 @import "./portfolio/portfolio.scss";
 @import "./header.scss";
@@ -23,13 +24,13 @@
 &::after {
 	box-sizing: border-box;
 }
-}
 ul, a, h1, h2, h3, h4, p, address{
     list-style: none;
     text-decoration: none;
     font-style: normal;
     padding: 0px;
     margin: 0px;
+}
 }
 img {
 	display: block;
@@ -50,12 +51,24 @@ body {
 	justify-content: space-between;
 	margin: 0 auto;
 	gap: 30px;
+	@include tablet {
+		gap: 22px;
+	  }
+	  @include mobile {
+		gap: 22px;
+	  }
 }
 .filter {
 	display: flex;
 	justify-content: center;
 	gap: 8px;
 	margin-bottom: 50px;
+	@include mobile {
+		
+		justify-content: normal;
+		flex-wrap: wrap;
+		row-gap: 15px;
+	  }
 }
 .social{
 	display: flex;
@@ -101,9 +114,8 @@ body {
 	}
 }
 input[type="checkbox"] {
-	outline: 1px solid $color_1;
 	appearance: none;
-	border: var(--black_gray) 1px solid;
+	border: #2F303A 1px solid;
 	height: 15px;
 	width: 16px;
 	border-radius: 2px;
@@ -114,9 +126,11 @@ input[type="checkbox"] {
 		color: $color_4;
 		&::before {
 			content: "✔";
+			color: white;
 			margin-left: 3px;
 			display: flex;
 			margin-top: -2px;
+			border: none;
 		}
 	}
 }

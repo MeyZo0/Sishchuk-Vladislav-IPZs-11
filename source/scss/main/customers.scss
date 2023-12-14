@@ -7,6 +7,13 @@
 		justify-content: center;
 		gap: 30px;
 		width: 100%;
+		@include tablet {
+			flex-wrap: wrap;
+		  }
+		  @include mobile {
+			gap: 17px;
+			flex-wrap: wrap;
+		  }
 	}
 	&__icon {
 		color: $color_7;
@@ -14,6 +21,9 @@
 		width: 100%;
 		height: 100%;
 		transition: 300ms;
+		@include mobile {
+			padding: 16px 52px;
+		  }
 	}
 	&__link {
 		@include link ()

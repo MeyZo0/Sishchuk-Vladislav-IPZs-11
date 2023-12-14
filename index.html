@@ -43,6 +43,51 @@
                                 </svg>+38 096 111 11 11</a>
                             </li>
                         </ul>
+                        <button class="mobile__button" type="button" data-menu-button aria-expanded="false">
+                            <svg class="mobile__button-close" width="19" height="19">
+                              <use href="./images/icons.svg#menu_close"></use>
+                            </svg>
+                            <svg class="mobile__button-open" width="24" height="16">
+                              <use href="./images/icons.svg#icon_menu"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="mobile" data-menu>
+                          <nav class="mobile__nav">
+                            <ul class="mobile__nav-list">
+                              <li class="mobile__nav-item">
+                                <a href="./index.html" class="mobile__nav-link">Студія</a>
+                              </li>
+                              <li class="mobile__nav-item">
+                                <a href="./portfolio.html" class="mobile__nav-link">Портфоліо</a>
+                              </li>
+                              <li class="mobile__nav-item">
+                                <a href="" class="mobile__nav-link">Контакти</a>
+                              </li>
+                            </ul>
+                          </nav>
+                          <ul class="mobile__contacts-list">
+                            <li class="mobile__contacts-item">
+                              <a class="mobile__contacts-link link mobile__contacts-link--blue" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile__contacts-item">
+                              <a class="mobile__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                          </ul>
+                          <ul class="mobile__social-list">
+                            <li class="mobile__social-item">
+                              <a class="mobile__social-link" href="#">Instagram</a>
+                            </li>
+                            <li class="mobile__social-item">
+                              <a class="mobile__social-link" href="#">Twitter</a>
+                            </li>
+                            <li class="mobile__social-item">
+                              <a class="mobile__social-link" href="#">Facebook</a>
+                            </li>
+                            <li class="mobile__social-item">
+                              <a class="mobile__social-link" href="#">LinkedIn</a>
+                            </li>
+                          </ul>
             </div>
     </header>
 
@@ -57,7 +102,7 @@
         <section class="info">
             <div class="container">
                 <ul class="info__ul">
-                    <li>
+                    <li class="info__list">
                         <div class="info__div">
                             <svg class="info__icon" width="70" height="70"><use href="./images/icons.svg#antenna"></use>
                             </svg>
@@ -65,7 +110,7 @@
                         <h3 class="info__title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="info__description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
-                    <li>
+                    <li class="info__list">
                         <div class="info__div">
                             <svg class="info__icon" width="70" height="70"><use href="./images/icons.svg#clock"></use>
                             </svg>
@@ -73,7 +118,7 @@
                         <h3 class="info__title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="info__description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
-                    <li>
+                    <li class="info__list">
                         <div class="info__div">
                             <svg class="info__icon" width="70" height="70"><use href="./images/icons.svg#diagram"></use>
                             </svg>
@@ -81,7 +126,7 @@
                         <h3 class="info__title">ПЛАНУВАННЯ</h3>
                         <p class="info__description">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li>
+                    <li class="info__list">
                         <div class="info__div">
                             <svg class="info__icon" width="70" height="70"><use href="./images/icons.svg#astonaut"></use>
                             </svg>
@@ -157,7 +202,7 @@
                                             </svg></a>
                                         </li>
                                         <li class="team__li">
-                                            <a class="social social team__link" href="https://www.facebook.com"><svg class="team__icon" width="20" height="20"><use href="./images/icons.svg#facebook"></use>
+                                            <a class="social team__link" href="https://www.facebook.com"><svg class="team__icon" width="20" height="20"><use href="./images/icons.svg#facebook"></use>
                                             </svg></a>
                                         </li>
                                         <li class="team__li">
@@ -268,12 +313,12 @@
 
     <footer class="footer">
         <div class="container">
-                <div class="footer__left">
+                <div class="footer__all">
                     <a class="footer__logo" href="index.html"> <span class="footer__web"> Web</span><span class="footer__studio">Studio</span></a>
                     <address class="footer__adress">
                         <ul class="footer__ul">
                             <li class="footer__li">
-                                <p class="footer__city">м.Київ пр-т Лесі Українки, 26</p>
+                                <a class="footer__city" href="#">м.Київ пр-т Лесі Українки, 26</a>
                             </li>
                             <li class="footer__li">
                                 <a class="footer__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -284,7 +329,7 @@
                         </ul>
                     </address>
                 </div>
-                <div class="footer__center">
+                <div class="footer__all">
                     <p class="footer__p">Приєднуйтесь</p>
                     <ul class="footer__svg">
                         <li class="footer__list">
@@ -305,7 +350,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__right">
+                <div class="footer__all">
                         <p class="footer__p">Підпишіться на розсилку</p>
                         <form class="footer__form">
                             <input class="footer__input" name="subscribe" type="email" placeholder="E-mail" required placeholder="">
@@ -367,6 +412,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/burger.js"></script>
 
 </body>
 </html>
