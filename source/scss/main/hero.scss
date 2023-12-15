@@ -7,6 +7,14 @@
 	padding-top: 200px;
 	padding-bottom: 200px;
 	background-color: $background-color_3;
+	@include tablet {
+		padding-top: 118px;
+		padding-bottom: 118px;
+	}
+	@include mobile {
+		padding-top: 118px;
+		padding-bottom: 118px;
+	}
 	&__title {
 		color: $color_4;
 		text-align: center;
@@ -16,7 +24,9 @@
 		letter-spacing: 2.64px;
 		text-transform: uppercase;
 		margin: 0 auto;
-
 		max-width: 700px;
+		@include mobile {
+			font-size: 26px;
+		}
 	}
 }

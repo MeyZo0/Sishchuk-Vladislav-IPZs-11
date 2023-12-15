@@ -652,6 +652,18 @@ button:focus {
   padding-bottom: 200px;
   background-color: #2F303A;
 }
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
 .hero__title {
   color: white;
   text-align: center;
@@ -663,11 +675,28 @@ button:focus {
   margin: 0 auto;
   max-width: 700px;
 }
+@media screen and (max-width: 759px) {
+  .hero__title {
+    font-size: 26px;
+  }
+}
 
 .info {
   text-align: left;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .info__ul {
   display: -webkit-box;
@@ -785,6 +814,18 @@ button:focus {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .team__div {
   padding: 30px;
   background-color: white;
@@ -797,6 +838,16 @@ button:focus {
   letter-spacing: 1.08px;
   margin-top: 0px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .team__our {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .team__our {
+    margin-bottom: 30px;
+  }
 }
 .team__pictures {
   width: 270px;
@@ -879,6 +930,18 @@ button:focus {
 .customers {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .customers__ul {
   display: -webkit-box;
