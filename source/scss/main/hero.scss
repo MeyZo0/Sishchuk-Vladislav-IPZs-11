@@ -1,13 +1,20 @@
 .hero {
 	background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/Img_background.jpg");
 	background-position: center;
-	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
 	align-items: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
 	background-color: $background-color_3;
+	@include tablet {
+		padding-top: 118px;
+		padding-bottom: 118px;
+	}
+	@include mobile {
+		padding-top: 118px;
+		padding-bottom: 118px;
+	}
 	&__title {
 		color: $color_4;
 		text-align: center;
@@ -17,7 +24,9 @@
 		letter-spacing: 2.64px;
 		text-transform: uppercase;
 		margin: 0 auto;
-		word-wrap: break-word;
 		max-width: 700px;
+		@include mobile {
+			font-size: 26px;
+		}
 	}
 }

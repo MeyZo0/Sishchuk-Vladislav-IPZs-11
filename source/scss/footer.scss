@@ -1,14 +1,60 @@
 .footer {
+	width: 100%;
+	background-color: $background-color_3;
 	.container {
 		padding-top: 60px;
 		padding-bottom: 60px;
 		display: flex;
 		align-items: baseline;
+		justify-content: space-between;
+		
+		@include mobile {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		@include tablet {
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
 	}
-	width: 100%;
-	background-color: $background-color_3;
-	&__center {
-		margin-left: 93px;
+	&__all{
+		&:not(:first-child) {
+			margin-left: 98px;
+			@include mobile {
+			  margin-left: 0;
+			}
+			@include tablet {
+			  margin-left: 0px;
+			}
+		  }
+		  &:nth-child(1) {
+			@include mobile {
+			  text-align: center;
+			  margin-bottom: 60px;
+			}
+			@include tablet {
+			  text-align: center;
+			}
+		  }
+		  &:nth-child(2) {
+			@include mobile {
+			  text-align: center;
+			  margin-bottom: 60px;
+			}
+			@include tablet {
+			  text-align: center;
+			}
+		  }
+		  &:nth-child(3) {
+			@include mobile {
+			  text-align: center;
+			}
+			@include tablet {
+			  margin-top: 60px;
+			  text-align: center;
+			}
+		  }
 	}
 	&__p {
 		color: $color_9;
@@ -92,14 +138,18 @@
 		line-height: 114.286%;
 		letter-spacing: 0.42px;
 	}
-	&__right {
-		margin-left: 93px;
-	}
 	&__form {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		margin-top: 20px;
+		@include tablet {
+			flex-direction: column;
+		}
+		@include mobile {
+			flex-direction: column;
+			
+		}
 	}
 	&__button {
 		display: flex;
@@ -119,6 +169,12 @@
 		justify-content: center;
 		padding: 10px 23px;
 		gap: 10px;
+		@include tablet {
+			margin-top: 20px;
+		}
+		@include mobile {
+			margin-top: 20px;
+		}
 	}
 	&__input {
 		border-radius: 4px;
@@ -132,6 +188,9 @@
 		color: $color_4;
 		&:focus {
 			outline: 1px solid var(--black_gray);
+		}
+		@include mobile {
+			width: 450px;
 		}
 	}
 }

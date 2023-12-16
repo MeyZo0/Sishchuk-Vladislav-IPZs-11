@@ -1,5 +1,12 @@
 .work {
 	padding-bottom: 94px;
+	text-align: center;
+	@include tablet {
+		display: none;
+	  }
+	  @include mobile {
+		display: none;
+	  }
 	&__li {
 		position: relative;
 	}

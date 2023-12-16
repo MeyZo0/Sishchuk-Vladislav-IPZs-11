@@ -16,61 +16,106 @@
 
 <body class="body">
     <header class="header">
-            <div class="container__header">
-                <div class="header__logotype">
-                    <a class="header__logo" href="index.html"> <span class="header__web"> Web</span><span class="header__studio">Studio</span></a>
-                </div>
-                    <nav class="header__nav">
-                        <ul class="header__ul">
-                            <li>
-                                <a class="header__link" href="index.html">Студія</a>
-                            </li>
-                            <li>
-                                <a class="header__link_active" href="portfolio.html">Портфоліо</a>
-                            </li>
-                            <li>
-                                <a class="header__link" href="https://media.tenor.com/r_88w-svNpUAAAAd/pudgedance-pudge.gif">Контакти</a>
-                            </li>
-                        </ul>
-                    </nav>
-                        <ul class="header__communication">
-                            <li>
-                                <a class="header__info" href="mailto:info@devstudio.com"><svg class="header__icon" width="16" height="12"><use href="./images/icons.svg#mail"></use>
-                                </svg>info@devstudio.com</a>
-                            </li>
-                            <li>
-                                <a class="header__info" href="tel:+380961111111"><svg class="header__icon" width="10" height="16"><use href="./images/icons.svg#phone"></use>
-                                </svg>+38 096 111 11 11</a>
-                            </li>
-                        </ul>
+        <div class="container__header">
+            <div class="header__logotype">
+                <a class="header__logo" href="index.html"> <span class="header__web"> Web</span><span class="header__studio">Studio</span></a>
             </div>
-    </header>
+                <nav class="header__nav">
+                    <ul class="header__ul">
+                        <li>
+                            <a class="header__link" href="index.html">Студія</a>
+                        </li>
+                        <li>
+                            <a class="header__link_active" href="portfolio.html">Портфоліо</a>
+                        </li>
+                        <li>
+                            <a class="header__link" href="https://media.tenor.com/r_88w-svNpUAAAAd/pudgedance-pudge.gif">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                    <ul class="header__communication">
+                        <li>
+                            <a class="header__info" href="mailto:info@devstudio.com"><svg class="header__icon" width="16" height="12"><use href="./images/icons.svg#mail"></use>
+                            </svg>info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a class="header__info" href="tel:+380961111111"><svg class="header__icon" width="10" height="16"><use href="./images/icons.svg#phone"></use>
+                            </svg>+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                    <button class="mobile__button" type="button" data-menu-button aria-expanded="false">
+                        <svg class="mobile__button-close" width="19" height="19">
+                          <use href="./images/icons.svg#menu_close"></use>
+                        </svg>
+                        <svg class="mobile__button-open" width="24" height="16">
+                          <use href="./images/icons.svg#icon_menu"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="mobile" data-menu>
+                      <nav class="mobile__nav">
+                        <ul class="mobile__nav-list">
+                          <li class="mobile__nav-item">
+                            <a href="./index.html" class="mobile__nav-link">Студія</a>
+                          </li>
+                          <li class="mobile__nav-item">
+                            <a href="./portfolio.html" class="mobile__nav-link">Портфоліо</a>
+                          </li>
+                          <li class="mobile__nav-item">
+                            <a href="" class="mobile__nav-link">Контакти</a>
+                          </li>
+                        </ul>
+                      </nav>
+                      <ul class="mobile__contacts-list">
+                        <li class="mobile__contacts-item">
+                          <a class="mobile__contacts-link link mobile__contacts-link--blue" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile__contacts-item">
+                          <a class="mobile__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                      </ul>
+                      <ul class="mobile__social-list">
+                        <li class="mobile__social-item">
+                          <a class="mobile__social-link" href="#">Instagram</a>
+                        </li>
+                        <li class="mobile__social-item">
+                          <a class="mobile__social-link" href="#">Twitter</a>
+                        </li>
+                        <li class="mobile__social-item">
+                          <a class="mobile__social-link" href="#">Facebook</a>
+                        </li>
+                        <li class="mobile__social-item">
+                          <a class="mobile__social-link" href="#">LinkedIn</a>
+                        </li>
+                      </ul>
+        </div>
+</header>
 
     <main>
         <section class="portfolio">
             <div class="container">
                 <ul class="filter">
                     <li>
-                        <button class="nav__button" type="button">Усі</button>
+                        <button class="nav__button" type="button" data-name="all">Усі</button>
                     </li>
                     <li>
-                        <button class="nav__button" type="button">Веб-сайти</button>
+                        <button class="nav__button" type="button" data-name="web">Веб-сайти</button>
                     </li>
                     <li>
-                        <button class="nav__button" type="button">Додатки</button>
+                        <button class="nav__button" type="button" data-name="app">Додатки</button>
                     </li>
                     <li>
-                        <button class="nav__button" type="button">Дизайн</button>
+                        <button class="nav__button" type="button" data-name="design">Дизайн</button>
                     </li>
                     <li>
-                        <button class="nav__button" type="button">Маркетинг</button>
+                        <button class="nav__button" type="button" data-name="marketing">Маркетинг</button>
                     </li>
                 </ul>
                 <ul class="portfolio__ul">
-                    <li class="portfolio__li">
+                    <li class="portfolio__li" data-name="web">
                         <a href="#" class="portfolio__link">
                             <div class="portfolio__card">
-                                <img class="pictures_portfolio_images" width="370" src="images/texnocrack.jpg" alt="Фото Технокряка"/>
+                                <img class="portfolio__images" width="370" src="images/texnocrack.jpg" alt="Фото Технокряка"/>
                                 <div class="portfolio__hiden">
                                     <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -81,7 +126,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__li">
+                    <li class="portfolio__li" data-name="design">
                         <a href="#" class="portfolio__link">
                             <div class="portfolio__card">
                                 <img class="portfolio__images" width="370" src="images/poster.jpg" alt="Фото Технокряка"/>
@@ -95,7 +140,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__li">
+                    <li class="portfolio__li" data-name="app">
                         <a href="#" class="portfolio__link">
                             <div class="portfolio__card">
                                 <img class="portfolio__images" width="370" src="images/seafood.jpg" alt="Фото Технокряка"/>
@@ -109,7 +154,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__li">
+                    <li class="portfolio__li" data-name="marketing">
                         <a href="#" class="portfolio__link">
                             <div class="portfolio__card">
                                 <img class="portfolio__images" width="370" src="images/project_prime.jpg" alt="Фото Технокряка"/>
@@ -123,7 +168,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__li">
+                    <li class="portfolio__li" data-name="app">
                         <a href="#" class="portfolio__link">
                             <div class="portfolio__card">
                                 <img class="portfolio__images" width="370" src="images/project_boxes.jpg" alt="Фото Технокряка"/>
@@ -137,7 +182,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__li">
+                    <li class="portfolio__li" data-name="web">
                         <a href="#" class="portfolio__link">
                             <div class="portfolio__card">
                                 <img class="portfolio__images" width="370" src="images/inspiration.jpg" alt="Фото Технокряка"/>
@@ -151,7 +196,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__li">
+                    <li class="portfolio__li" data-name="design">
                         <a href="#" class="portfolio__link">
                             <div class="portfolio__card">
                                 <img class="portfolio__images" width="370" src="images/limited_edition.jpg" alt="Фото Технокряка"/>
@@ -165,7 +210,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__li">
+                    <li class="portfolio__li" data-name="marketing">
                         <a href="#" class="portfolio__link">
                             <div class="portfolio__card">
                                 <img class="portfolio__images" width="370" src="images/project_lab.jpg" alt="Фото Технокряка"/>
@@ -179,7 +224,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__li">
+                    <li class="portfolio__li" data-name="app">
                         <a href="#" class="portfolio__link">
                             <div class="portfolio__card">
                                 <img class="portfolio__images" width="370" src="images/texnocrack.jpg" alt="Фото Технокряка"/>
@@ -200,12 +245,12 @@
 
     <footer class="footer">
         <div class="container">
-                <div class="footer__left">
+                <div class="footer__all">
                     <a class="footer__logo" href="index.html"> <span class="footer__web"> Web</span><span class="footer__studio">Studio</span></a>
                     <address class="footer__adress">
                         <ul class="footer__ul">
                             <li class="footer__li">
-                                <p class="footer__city">м.Київ пр-т Лесі Українки, 26</p>
+                                <a class="footer__city" href="#">м.Київ пр-т Лесі Українки, 26</a>
                             </li>
                             <li class="footer__li">
                                 <a class="footer__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -216,7 +261,7 @@
                         </ul>
                     </address>
                 </div>
-                <div class="footer__center">
+                <div class="footer__all">
                     <p class="footer__p">Приєднуйтесь</p>
                     <ul class="footer__svg">
                         <li class="footer__list">
@@ -237,7 +282,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__right">
+                <div class="footer__all">
                         <p class="footer__p">Підпишіться на розсилку</p>
                         <form class="footer__form">
                             <input class="footer__input" name="subscribe" type="email" placeholder="E-mail" required placeholder="">
@@ -253,5 +298,8 @@
         </div>
     </footer>
     
+    <script src="./js/burger.js"></script>
+    <script src="./js/filter.js"></script>
+
 </body>
 </html>

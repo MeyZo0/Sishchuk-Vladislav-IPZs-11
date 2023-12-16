@@ -2,8 +2,17 @@
 	background: #F5F4FA;
 	padding-top: 94px;
 	padding-bottom: 94px;
+	@include tablet {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	@include mobile {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
 	&__div {
 		padding: 30px;
+		background-color: white;
 	}
 	&__our {
 		color: $color_5;
@@ -13,12 +22,26 @@
 		letter-spacing: 1.08px;
 		margin-top: 0px;
 		margin-bottom: 50px;
+		@include tablet {
+			margin-bottom: 30px;
+		}
+		@include mobile {
+			margin-bottom: 30px;
+		}
 	}
 	&__pictures {
-		@include foto_card (270px)
+		@include foto_card ();
+		@include tablet {
+			width: 354px;
+			height: 374px;
+		  }
+		  @include mobile {
+			width: 450px;
+			height: 460px;
+		  }
 	}
 	&__people {
-		border-radius: 0px 0px 4px 4px;
+		border-radius: 4px 4px 0px 0px;
 		background: var(--white);
 		box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 	}
@@ -54,5 +77,14 @@
 		justify-content: space-between;
 		margin: 0 auto;
 		gap: 10px;
+		@include tablet {
+			flex-wrap: wrap;
+			justify-content: center;
+		  }
+		  @include mobile {
+			flex-wrap: wrap;
+			justify-content: center;
+		  }
 	}
+	
 }
